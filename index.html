@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTN</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="./script/checker.js"></script>
+    <link rel="stylesheet" media="(min-width: 340px)" href="./style/desktop.css">
+    <link rel="stylesheet" media="(max-width: 340px)" href="./style/mobile.css">
+</head>
+
+<body>
+    <div class="game-start">
+        <div class="begin-error hidden">Number should be 4 digits long</div>
+        <div class="begin-error2 hidden">Number should not contain repeted digits</div>
+        <form>
+            <input id="my-num" type="number" maxlength="4">
+            <button id="start-btn">Begin!</button>
+        </form>
+    </div>
+    <div class="result hidden">
+        <h1 class="win hidden">You won!</h1>
+        <h1 class="lose hidden">You lost!</h1>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+    <div class="game hidden">
+        <form action="">
+            <div class="game-error">Number should be 4 digits long</div>
+            <input id="my-guess" type="number" maxlength="4">
+            <button id="guess-btn">Guess!</button>
+            <span id="num-of-guesses"></span>
+        </form>
+        <table>
+            <thead>
+                <th>Guess</th>
+                <th>Correct</th>
+                <th>Position</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

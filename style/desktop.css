@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+}
+
+.game-start {
+	padding: 40px 30px;
+}
+
+input {
+	padding: 15px 20px;
+	font-size: 16px;
+	border: 2px solid rgba(167, 180, 224, 0.7);
+}
+
+input:focus {
+	border: 2px solid rgb(4, 61, 248);
+	outline: none;
+}
+
+button {
+	padding: 15px 20px;
+	font-size: 16px;
+	border: 2px solid rgb(51, 82, 182, 0.7);
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(4, 61, 248, 0.2);
+}
+
+input,
+button {
+	border-radius: 10px;
+}
+
+.result {
+	padding: 40px 30px;
+	font-size: 30px;
+}
+
+.game {
+	border: 1px solid hsl(0, 100%, 50%);
+	padding: 40px 30px;
+}
+
+table {
+	border: 2px solid darkgray;
+	margin-top: 10px;
+}
+
+th {
+	padding: 10px 30px;
+	border: 1px solid darkgray;
+	font-size: 35px;
+}
+
+td {
+	font-size: 25px;
+	border: 1px dashed darkgray;
+	padding: 5px 10px;
+	text-align: end;
+}
+
+.hidden {
+	display: none;
+}
