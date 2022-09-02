@@ -41,14 +41,14 @@ $(document).ready(function () {
         } else {
             numOfGuesses++;
 
-            if (numOfGuesses === 5) {
+            if (numOfGuesses === 10) {
                 $(".game").addClass("hidden");
                 $(".result").removeClass("hidden");
                 $(".lose").removeClass("hidden");
                 $(".lose").append(`<span> Number was ${myNum}.</span>`)
             }
 
-            $("#num-of-guesses").html(`<h3>${5 - numOfGuesses} guess left!</h3>`)
+            $("#num-of-guesses").html(`<h3>${10 - numOfGuesses} guess left!</h3>`)
 
             var correct = 0;
             var position = 0;
